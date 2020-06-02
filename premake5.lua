@@ -8,14 +8,9 @@ project "log_c"
 
    files 
    { 
-      "%{prj.name}/src/**.h",
-      "%{prj.name}/src/**.c" 
+      "src/log.h",
+      "src/log.c" 
    }
-
-   --includedirs
-   --{
-   --   "AlbaEngine/src",
-   --}
 
    filter "system:windows"
       systemversion "latest"

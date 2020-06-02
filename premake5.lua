@@ -6,6 +6,11 @@ project "log_c"
    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
    objdir ("bin-obj/" .. outputdir .. "/%{prj.name}")
 
+   defines 
+   {
+      "LOG_USE_COLOR"
+   }
+
    files 
    { 
       "src/log.h",
